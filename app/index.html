@@ -1,0 +1,38 @@
+<html>
+<head><title>app</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+
+</head>
+<body ng-app="app" ng-controller="IndexController as vm" layout="column">
+
+<header>
+    <ul>
+        <li><a class="active" href="#/">Home</a></li>
+        <li><a href="#/">About</a></li>
+    </ul>
+</header>
+<br>
+<br>
+<div flex layout = "column" ng-view></div>
+
+
+<footer class="footer">
+    <md-toolbar class="md-scroll-shrink">
+        <div layout="row" layout-align="center center" flex>
+            FOOTER INFO
+        </div>
+    </md-toolbar>
+</footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="index.route.js" ></script>
+<script src="index.controller.js" ></script>
+<script src="components/homePage/homePage.controller.js" ></script>
+
+
+</body>
+</html>
